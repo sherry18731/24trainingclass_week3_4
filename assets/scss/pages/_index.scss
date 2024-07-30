@@ -1,11 +1,11 @@
 .banner {
-  background-image: url(/assets/images/home-header.png);
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
   padding: 296px 0px;
   @include mobile-lg {
-    background-image: url(/assets/images/home-header-sm.png);
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
   }
   .container-fluid {
     flex-direction: column;
@@ -107,14 +107,14 @@
 // section4 co-branded 聯名設計鏡框
 
 .co-branded {
-  background-image: url(/assets/images/index-bg.png);
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   @include pad {
-    background-image: url(/assets/images/index-bg-md.png);
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
   }
   @include mobile {
-    background-image: url(/assets/images/index-bg-sm.png);
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
   }
   .row {
     padding: 0px 12px;
