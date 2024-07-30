@@ -1,0 +1,60 @@
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-2 {
+  margin-right: 8px;
+}
+
+.me-12 {
+  margin-right: 48px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+.mb-16 {
+  margin-bottom: 64px;
+}
+
+.mb-20 {
+  margin-bottom: 80px;
+}
+
+.py-20 {
+  padding: 80px 0px;
+  @include mobile {
+    padding: 40px 0px;
+  }
+}
+
+@include mobile {
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+}

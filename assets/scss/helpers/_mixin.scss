@@ -1,0 +1,39 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 579px) {
+    @content;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  @include pad {
+    max-width: 720px;
+  }
+
+  @include mobile {
+    max-width: 372px;
+  }
+}
+
+.container-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}

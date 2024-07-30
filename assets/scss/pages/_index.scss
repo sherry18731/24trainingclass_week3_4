@@ -1,0 +1,225 @@
+.banner {
+  background-image: url(/assets/images/home-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 296px 0px;
+  @include mobile-lg {
+    background-image: url(/assets/images/home-header-sm.png);
+  }
+  .container-fluid {
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    color: $secondary;
+  }
+  p {
+    font-size: 36px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  button {
+    padding: 6px 12px;
+    background-color: $primary;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    &:hover {
+      background-color: lighten($primary, 8%);
+    }
+  }
+}
+
+// section2 major 用專業的心，做專業的事
+
+.major {
+  background-color: $light;
+  color: $secondary;
+
+  p {
+    color: #000;
+  }
+  .col {
+    width: 25%;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+  .icon {
+    font-size: 84px;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+// section3 classic 經典系列鏡框
+
+.classic {
+  .row {
+    justify-content: center;
+    @include pad {
+      gap: 24px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .col {
+    max-width: 336px;
+    a :hover {
+      filter: opacity(0.5);
+    }
+    h3 {
+      font-size: 36px;
+      color: $primary;
+      font-style: italic;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+}
+
+// section4 co-branded 聯名設計鏡框
+
+.co-branded {
+  background-image: url(/assets/images/index-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include pad {
+    background-image: url(/assets/images/index-bg-md.png);
+  }
+  @include mobile {
+    background-image: url(/assets/images/index-bg-sm.png);
+  }
+  .row {
+    padding: 0px 12px;
+    @include pad {
+      gap: 24px;
+    }
+  }
+  .col {
+    width: 50%;
+    padding: 0;
+    @include pad {
+      width: 100%;
+      padding: 0px 12px;
+    }
+  }
+  a {
+    display: inline-block;
+    &:hover {
+      filter: opacity(0.8);
+    }
+  }
+  p {
+    background: #fff;
+    font-size: 3rem;
+    color: $primary;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+// section5 recommend 顧客推薦
+
+.recommend {
+  .row {
+    row-gap: 24px;
+  }
+  .col {
+    width: 25%;
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 0px 0px 4px 4px;
+    height: 100%;
+    min-height: 205px;
+    time {
+      margin-top: auto;
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+}
+
+// section6 contact 聯絡我們
+
+.contact {
+  background-color: $light;
+  .container {
+    width: 50%;
+    @include pad {
+      width: 100%;
+      max-width: 720px;
+    }
+    @include mobile {
+      width: 100%;
+      max-width: 348px;
+    }
+  }
+  .form {
+    flex-direction: column;
+    &-but {
+      width: 75%;
+      align-self: center;
+      padding: 16px 0px;
+      background-color: $primary;
+      border: 0;
+      color: #fff;
+      font-weight: normal;
+      font-weight: 700;
+      &:hover {
+        background-color: lighten($primary, 8%);
+      }
+    }
+  }
+  label {
+    margin: 16px 0px 8px 0px;
+  }
+  input,
+  textarea {
+    padding: 6px 12px;
+    background-color: $light;
+    border: 1px solid #000;
+    resize: none;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

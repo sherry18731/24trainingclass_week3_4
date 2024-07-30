@@ -1,0 +1,59 @@
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// index title
+.h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+.fz-4 {
+  font-size: 16px;
+}
+
+.fz-7 {
+  font-size: 32px;
+}
+
+.fz-8 {
+  font-size: 36px;
+}
+
+.fz-9 {
+  font-size: 36px;
+}
+
+.fz-10-5 {
+  font-size: 42px;
+}
+
+.fz-12 {
+  font-size: 48px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+@include mobile {
+  .fz-sm-6 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,103 @@
+.series {
+  &-menu {
+    @include pad {
+      .container-fluid {
+        padding: 0;
+      }
+    }
+    ul {
+      justify-content: space-around;
+      li {
+        width: 33.3333%;
+        text-align: center;
+      }
+      .active {
+        border-bottom: 8px $primary solid;
+      }
+      a {
+        display: block;
+        border: 1px #dcdcdc solid;
+        padding: 24px 0px;
+        font-size: 32px;
+        font-weight: 500;
+        &:hover {
+          border-bottom: 8px $primary solid;
+        }
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  //
+  .row {
+    justify-content: center;
+    row-gap: 80px;
+    @include mobile {
+      row-gap: 24px;
+    }
+  }
+  .col {
+    width: 25%;
+    &:hover {
+      filter: opacity(0.8);
+    }
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-color {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  p {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .gray {
+    background-color: #5f3e2d;
+  }
+  .brown {
+    background-color: #b75929;
+  }
+  //這裡的寬度為什麼不能滿版= =#
+  &-subnav {
+    .container-fluid {
+      padding: 0;
+    }
+    ul {
+      justify-content: center;
+      width: 100%;
+    }
+    //這裡寫的有點亂＠＠應該有更好的寫法，待研究
+    li {
+      border-top: 1px solid #555555;
+      border-bottom: 1px solid #555555;
+      border-right: 1px solid #555555;
+      &:first-child {
+        border-left: 1px solid #555555;
+      }
+    }
+    a {
+      font-size: 1rem;
+      display: inline-block;
+      padding: 12px 15px;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: default;
+      }
+      &.active {
+        background-color: #000;
+        color: #fff;
+        cursor: default;
+      }
+    }
+  }
+}

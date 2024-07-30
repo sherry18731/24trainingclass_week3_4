@@ -1,0 +1,23 @@
+.d-flex {
+  display: flex;
+}
+
+@include mobile {
+  .d-sm-none {
+    display: none;
+  }
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.row {
+  margin: 0px -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: 0px 12px;
+}
