@@ -63,18 +63,17 @@
       &:hover {
         filter: opacity(0.6);
       }
-    }
-    @include pad {
-      ul {
-        gap: 16px;
-      }
-      img {
+      @include pad {
         width: 40px;
       }
-    }
-    @include mobile {
-      img {
+      @include mobile {
         width: 24px;
+      }
+    }
+    ul {
+      gap: 32px;
+      @include pad {
+        gap: 16px;
       }
     }
   }
