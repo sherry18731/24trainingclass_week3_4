@@ -2,14 +2,13 @@
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  padding: 296px 0px;
+  height: 100vh;
   @include mobile-lg {
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
   }
   .container-fluid {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     text-align: right;
     color: $secondary;
   }
@@ -110,6 +109,7 @@
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   @include pad {
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
   }
